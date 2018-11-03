@@ -1,4 +1,4 @@
-183343631ed1f61b8dbeaeaca66c6c29 *DESCRIPTION
+ae5abd0d8d842c53a858e6f2ca54a3bd *DESCRIPTION
 04dc4cd79cad0d9eb8ba7f7a2c0d15cd *NAMESPACE
 71ed16ce5c4451e999945124522bf666 *R/app.R
 51bc8af5cb6f386dc930633d95e18c7d *R/design.R
@@ -6,8 +6,9 @@ b573e1e88f3e5ac2e1398d804c61dad3 *R/efficiency.R
 628437cbf87ad9b62af2bcde858d1d6f *R/informatrix.R
 d768cb1db9a4e8ef37c4a4901692e06e *R/owea.R
 ea6501b7024d477e2b642416335086e6 *R/summary.R
-f8e6fade49c8cf268dec3c0a79976148 *inst/shiny/server.R
-b3a89d7ec73b3c9935fe69bfcc7b87e2 *inst/shiny/ui.R
+ba3adab46f85a9d9e1089b93fbc8cd43 *README.md
+e1f5f6d080489b46c035cfdc71ae6764 *inst/shiny/server.R
+9256c9448e9cb7d00f70700d4cc26ecf *inst/shiny/ui.R
 688d7ec56c53b9f72b6c75b1f7c72318 *inst/test/example.R
 dbd152b24729d7e9e7615de90e3170fc *inst/test/example.html
 d672b9d4ae20fb76191b04c2b29419cc *man/OWEA.Rd

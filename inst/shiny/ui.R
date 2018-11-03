@@ -1,5 +1,5 @@
 library(shiny)
-library(owea)
+library(OWEA)
 # Define UI for application that draws a histogram
 shinyUI(
   navbarPage(
@@ -304,7 +304,7 @@ shinyUI(
   
   tabPanel('About',
            verticalLayout(
-           h5("Bug Report: shao21@uic.edu", align = 'center'),
+           h5("Bug Report: shuaih0303@gmail.com", align = 'center'),
            h5('Author: Shuai Hao, Wei Zheng, Min Yang', align = 'center'),
            tags$hr()
            )

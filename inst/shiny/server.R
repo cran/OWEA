@@ -25,7 +25,7 @@ shinyServer(function(input, output, session) {
       
       set.seed(input$seed_drop)
       x$out <- 
-        owea::design(
+        OWEA::design(
           model = input$model, n = input$n_drop, opt = input$opt_drop,
           t = input$t_drop, p = input$p_drop, 
           drop = as.numeric(strsplit(input$drop_drop,split = ',')[[1]]),

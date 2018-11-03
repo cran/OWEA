@@ -2,7 +2,7 @@ Package: OWEA
 Type: Package
 Title: Optimal Weight Exchange Algorithm for Optimal Designs for Three
         Models
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Shuai", "Hao", email="shuaih0303@gmail.com", role = c("aut","cre")), 
     person("Min", "Yang", email="myang2@uic.edu", role = c("aut")),
@@ -20,9 +20,9 @@ Suggests: knitr, rmarkdown
 Imports: gtools (>= 3.8.1), MASS, shiny (>= 1.1.0)
 RoxygenNote: 6.1.0
 NeedsCompilation: no
-Packaged: 2018-10-30 21:31:07 UTC; shuaihao
+Packaged: 2018-11-03 02:26:06 UTC; shuaihao
 Author: Shuai Hao [aut, cre],
   Min Yang [aut],
   Wei Zheng [aut]
 Repository: CRAN
-Date/Publication: 2018-11-02 19:00:09 UTC
+Date/Publication: 2018-11-03 15:30:03 UTC
