@@ -24,14 +24,14 @@ eff(exact_design, ex = NULL)
 \item{ex}{Matrix. Design to be compared to. Default is \code{NULL}.}
 }
 \value{
-Numeric. Relatve Efficiency.
-    \item{If \code{ex} is given}{return relative effciency by \deqn{\Phi_{example}/\Phi_{exact\_design};}}
-    \item{If \code{ex} is missing}{return relative efficiency by \deqn{\Phi_{approx\_design}/\Phi_{exact\_design}.}}
+Numeric. Relative Efficiency.
+    If \code{ex} is given, return relative efficiency by \eqn{\Phi_{example}/\Phi_{exact\_design}};
+    If \code{ex} is missing, return relative efficiency by \eqn{\Phi_{approx\_design}/\Phi_{exact\_design}}.
 }
 \description{
-A generic function that returns the effciency for either exact designs to approximate
+A generic function that returns the efficiency for either exact designs to approximate
 designs or exact design to a given design
 }
 \seealso{
-see examples in \code{\link{design}}.
+see examples in \link{design}.
 }

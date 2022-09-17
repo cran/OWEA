@@ -1,14 +1,14 @@
 #' Efficiency generic function
 #'
-#' A generic function that returns the effciency for either exact designs to approximate
+#' A generic function that returns the efficiency for either exact designs to approximate
 #' designs or exact design to a given design
 #' @param exact_design A S3 object returned by \code{design} function.
 #' @param ex Matrix. Design to be compared to. Default is \code{NULL}.
 #' @export
-#' @return Numeric. Relatve Efficiency.
-#'     \item{If \code{ex} is given}{return relative effciency by \deqn{\Phi_{example}/\Phi_{exact\_design};}}
-#'     \item{If \code{ex} is missing}{return relative efficiency by \deqn{\Phi_{approx\_design}/\Phi_{exact\_design}.}}
-#' @seealso see examples in \code{\link{design}}.
+#' @return Numeric. Relative Efficiency.
+#'     If \code{ex} is given, return relative efficiency by \eqn{\Phi_{example}/\Phi_{exact\_design}};
+#'     If \code{ex} is missing, return relative efficiency by \eqn{\Phi_{approx\_design}/\Phi_{exact\_design}}.
+#' @seealso see examples in \link{design}.
 eff <- function(exact_design, ex = NULL){
   UseMethod('eff', exact_design)
 }
@@ -144,7 +144,7 @@ eff.interference <- function(exact_design, ex = NULL){
 #' @seealso see examples in \code{\link{design}}.
 
 effLB <- function(exact_design) {
-  if (class(exact_design) != 'dropout') {
+  if (!methods::is(exact_design, 'dropout')) {
     stop("This function is only for 'dropout' class!")
   }
   # a function to calculate informatrix at point without expectation.
@@ -206,7 +206,7 @@ effLB <- function(exact_design) {
       phi1 <- phi1 + realize.prob1[i] * det(covar1)
     }
     phi2 <- det(covar2)
-    out <- list(efficiency.self = phi2/phi1, optimal.value = phi2)
+    out <- list(efficiency.self = (phi2/phi1)^(1/t), optimal.value = phi2)
   }
 
 
